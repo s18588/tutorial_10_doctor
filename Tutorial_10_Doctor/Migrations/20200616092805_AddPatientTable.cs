@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Tutorial_10_Doctor.Migrations
 {
@@ -11,11 +10,10 @@ namespace Tutorial_10_Doctor.Migrations
                 name: "Patient",
                 columns: table => new
                 {
-                    IdPatient = table.Column<int>(nullable: false)
+                    IdPatient = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    BirthDate = table.Column<DateTime>(nullable: false)
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
