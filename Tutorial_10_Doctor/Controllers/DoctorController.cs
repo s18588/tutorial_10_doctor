@@ -61,11 +61,12 @@ namespace Tutorial_10_Doctor.Controllers
             try
             {
                 _service.DeleteDoctor(doctor);
+                return Ok(doctor);
             }
             catch (Exception e)
             {
                 return BadRequest(e);
             }
-    }
+        }
     }
 }

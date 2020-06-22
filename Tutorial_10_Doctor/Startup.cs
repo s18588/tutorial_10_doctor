@@ -11,7 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Tutorial_10_Doctor.DTOs.Requests;
 using Tutorial_10_Doctor.Models;
+using Tutorial_10_Doctor.Services;
 
 namespace Tutorial_10_Doctor
 {
@@ -32,7 +34,7 @@ namespace Tutorial_10_Doctor
                 {
                     options.UseSqlServer("Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s18588;User ID=apbds18588;Password=admin");
                 });
-            services.AddTransient<, OrderDbService>();
+            services.AddTransient<IDoctorDbService, DoctorDbService>();
             services.AddControllers();
         }
 
