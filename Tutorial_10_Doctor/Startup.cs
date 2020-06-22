@@ -30,7 +30,7 @@ namespace Tutorial_10_Doctor
             // Using Docker 
             services.AddDbContext<PatientDbContext>(options =>
                 {
-                    options.UseSqlServer("Server=localhost,1401; Database=master; User=sa; Password =reallyStrongPwd123;");
+                    options.UseSqlServer("Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s18588;User ID=apbds18588;Password=admin");
                 });
             services.AddControllers();
         }

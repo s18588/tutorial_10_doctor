@@ -38,13 +38,9 @@
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
-/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
-/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
-/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
-/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/obj/Debug/netcoreapp3.1/Tutorial_10_Doctor.csprojAssemblyReference.cache
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/obj/Debug/netcoreapp3.1/Tutorial_10_Doctor.MvcApplicationPartsAssemblyInfo.cache
@@ -56,3 +52,6 @@
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/obj/Debug/netcoreapp3.1/staticwebassets/Tutorial_10_Doctor.StaticWebAssets.xml
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/obj/Debug/netcoreapp3.1/Tutorial_10_Doctor.dll
 /Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/obj/Debug/netcoreapp3.1/Tutorial_10_Doctor.pdb
+/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/michalarent/RiderProjects/Tutorial_10_Doctor/Tutorial_10_Doctor/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
