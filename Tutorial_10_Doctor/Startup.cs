@@ -32,6 +32,7 @@ namespace Tutorial_10_Doctor
                 {
                     options.UseSqlServer("Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=s18588;User ID=apbds18588;Password=admin");
                 });
+            services.AddTransient<, OrderDbService>();
             services.AddControllers();
         }
 

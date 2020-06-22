@@ -16,6 +16,12 @@
           <e p="PatientController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
+        <e p="DTOs" t="Include">
+          <e p="Requests" t="Include">
+            <e p="DoctorRequest.cs" t="Include" />
+          </e>
+          <e p="Responses" t="Include" />
+        </e>
         <e p="Migrations" t="Include">
           <e p="20200616092805_AddPatientTable.cs" t="Include" />
           <e p="20200616092805_AddPatientTable.Designer.cs" t="Include" />
@@ -41,6 +47,10 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="DoctorDbService.cs" t="Include" />
+          <e p="IDoctorDbService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Tutorial_10_Doctor.csproj" t="IncludeRecursive" />

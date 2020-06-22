@@ -1,7 +1,10 @@
+using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Tutorial_10_Doctor.DTOs.Requests;
 using Tutorial_10_Doctor.Models;
+using Tutorial_10_Doctor.Services;
 
 namespace Tutorial_10_Doctor.Controllers
 {
@@ -11,6 +14,7 @@ namespace Tutorial_10_Doctor.Controllers
     {
         private readonly PatientDbContext _context;
 
+        private readonly IDoctorDbService _service;
         public DoctorController(PatientDbContext context)
         {
             _context = context;
@@ -25,49 +29,42 @@ namespace Tutorial_10_Doctor.Controllers
         [HttpPut]
         public IActionResult UpdateDoctor(Doctor doctor)
         {
-
-            if (_context.Doctor.Any(e => e.IdDoctor == doctor.IdDoctor))
+            try
             {
-                var d = _context.Doctor.Find(doctor.IdDoctor);
-                d.FirstName = doctor.FirstName;
-                d.LastName = doctor.LastName;
-                d.Email = d.Email;
-                _context.SaveChanges();
-                return Ok("Doctor " + doctor.Email + " updated!");
+                _service.UpdateDoctor(new DoctorRequest());
+                return Ok(doctor);
             }
-            else
+            catch (Exception e)
             {
-                return BadRequest("No doctor found");
+                return BadRequest(e);
             }
+            
         }
 
         [HttpPost]
-        public IActionResult AddDoctor(Doctor doctor)
+        public IActionResult AddDoctor(DoctorRequest doctor)
         {
-            if (_context.Doctor.Any(e => e.IdDoctor == doctor.IdDoctor))
+            try
             {
-                return BadRequest("Doctor already exists.");
+                _service.AddDoctor(doctor);
+                return Ok(doctor);
             }
-            else
+            catch (Exception e)
             {
-                _context.Add(doctor);
-                _context.SaveChanges();
-                return Ok("Doctor " + doctor.Email + " added!");
+                return BadRequest(e);
             }
         }
 
         [HttpDelete]
-        public IActionResult DeleteDoctor(Doctor doctor)
+        public IActionResult DeleteDoctor(DoctorRequest doctor)
         {
-            if (_context.Doctor.Any(e => e.IdDoctor == doctor.IdDoctor))
+            try
             {
-                _context.Doctor.Remove(doctor);
-                _context.SaveChanges();
-                return Ok("Doctor removed");
+                _service.DeleteDoctor(doctor);
             }
-            else
+            catch (Exception e)
             {
-                return BadRequest("Bad doctor");
+                return BadRequest(e);
             }
     }
     }
